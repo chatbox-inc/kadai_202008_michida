@@ -1,0 +1,27 @@
+$sp: 768px;
+img {
+  width: 100%;
+}
+hr {
+  margin: 0;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 16px;
+}
+a {
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+.row {
+  margin: 0;
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
