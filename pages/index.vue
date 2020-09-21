@@ -7,7 +7,6 @@
         </a>
       </div>
     </div>
-    <hr />
     <div id="products" class="products">
       <div class="products-wrap">
         <div class="products-title">
@@ -107,7 +106,6 @@
         </div>
       </div>
     </div>
-    <hr />
     <div id="recruit" class="recruit">
       <div class="recruit-wrap">
         <div class="recruit-container">
@@ -142,7 +140,6 @@
         </div>
       </div>
     </div>
-    <hr />
   </div>
 </template>
 

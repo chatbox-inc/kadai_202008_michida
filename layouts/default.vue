@@ -20,7 +20,6 @@
         </div>
       </div>
     </nav>
-    <hr />
     <Nuxt />
     <footer>
       <div class="foot-wrap">
@@ -194,6 +193,7 @@ img {
   width: 100%;
   background-color: #fff;
   position: fixed;
+  top: 0;
   height: 60px;
   @include pc {
     width: 95%;
@@ -320,10 +320,10 @@ footer {
   margin-right: 10px;
 }
 .pc-nav-twitter {
-  background: #1da1f2;
+  background: $twitter;
 }
 .pc-nav-facebook {
-  background: #4267b2;
+  background: $facebook;
 }
 .pc-nav-bottom-row {
   width: 100%;
@@ -368,11 +368,11 @@ footer {
   right: 15px;
 }
 .twitter {
-  background-color: #1da1f2;
+  background-color: $twitter;
   margin-right: 15px;
 }
 .facebook {
-  background-color: #4267b2;
+  background-color: $facebook;
 }
 .bottom-nav-sp {
   display: block;
