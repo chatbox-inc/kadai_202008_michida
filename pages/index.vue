@@ -203,6 +203,9 @@ export default {};
   font-size: 20px;
   margin: 0;
   font-weight: bold;
+  @include pc {
+    font-size: 30px;
+  }
 }
 .products-slide {
   display: flex;

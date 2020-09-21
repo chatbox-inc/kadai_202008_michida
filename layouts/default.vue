@@ -104,12 +104,12 @@
                 <ul>
                   <li>
                     <a class="pc-nav-sns pc-nav-twitter" href="#">
-                      <i class="fab fa-twitter"></i>Twitter
+                      <i class="fab fa-twitter pc-sns"></i>Twitter
                     </a>
                   </li>
                   <li>
                     <a class="pc-nav-sns pc-nav-facebook" href="#">
-                      <i class="fab fa-facebook-f"></i>Facebook
+                      <i class="fab fa-facebook-square pc-sns"></i>Facebook
                     </a>
                   </li>
                 </ul>
@@ -184,8 +184,13 @@ img {
   margin-left: 8px;
   margin-top: 20px;
   width: 120px;
+  @include pc {
+    margin-left: 30px;
+    width: 150px;
+  }
 }
 .nav-head {
+  z-index: 10;
   width: 100%;
   background-color: #fff;
   position: fixed;
@@ -214,8 +219,10 @@ img {
   }
 }
 .head-pc-nav a {
+  font-size: 14px;
   font-weight: bold;
   margin-right: 30px;
+  margin-left: 40px;
 }
 .english {
   color: #fff;
@@ -308,6 +315,9 @@ footer {
   padding-top: 10px;
   text-align: center;
   margin-bottom: 10px;
+}
+.pc-sns {
+  margin-right: 10px;
 }
 .pc-nav-twitter {
   background: #1da1f2;
