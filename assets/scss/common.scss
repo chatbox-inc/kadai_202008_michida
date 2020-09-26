@@ -1,6 +1,8 @@
 $pc: 768px;
 $twitter: #1da1f2;
 $facebook: #4267b2;
+$font-A: 20px;
+$font-B: 26px;
 
 a {
   color: #000;
@@ -9,6 +11,15 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+@mixin bold {
+  font-weight: bold;
+}
+@mixin link-box($number1, $number2, $number3) {
+  color: #fff;
+  background-color: #ffb32e;
+  padding: $number1 $number2;
+  border-radius: $number3;
 }
 @mixin pc {
   @media (min-width: ($pc)) {
