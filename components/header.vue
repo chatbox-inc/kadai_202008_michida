@@ -313,9 +313,9 @@ export default {
   transition: 0.3s;
 }
 .hbg_btn2 {
-  transform: translateX(10px);
+  transform: translateX(12px);
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .hbg_btn3 {
   transform: translateY(-8px) rotate(45deg);

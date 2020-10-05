@@ -2,9 +2,43 @@
   <div class="top-page">
     <div class="slider">
       <div class="slide-list">
-        <a href="#">
-          <img src="/images/img_list1.png" alt="MONKEY BARRELS" />
-        </a>
+        <div class="hooper-top">
+          <hooper
+            class="hooper-top_hooper"
+            :itemsToShow="1"
+            :centerMode="true"
+            :auto-play="true"
+            :play-speed="3000"
+          >
+            <slide class="hooper-top_slide">
+              <a href="#">
+                <img src="/images/monkey.png" alt="MONKEY BARRELS" />
+              </a>
+            </slide>
+            <slide class="hooper-top_slide">
+              <a href="#">
+                <img src="/images/goodfeel.png" alt="" />
+              </a>
+            </slide>
+            <slide class="hooper-top_slide">
+              <a href="#">
+                <img src="/images/dataImage.png" alt="" />
+              </a>
+            </slide>
+            <slide class="hooper-top_slide">
+              <a href="#">
+                <img src="/images/craft.png" alt="" />
+              </a>
+            </slide>
+            <slide>
+              <a href="#">
+                <img src="/images/Online.jpg" alt="" />
+              </a>
+            </slide>
+
+            <hooper-navigation slot="hooper-addons"></hooper-navigation>
+          </hooper>
+        </div>
       </div>
     </div>
     <div id="products" class="products">
@@ -61,7 +95,9 @@
                   <div class="date">2020.08.26</div>
                 </div>
                 <div class="article-txt">
-                  <p>【大阪事業所】新規プロジェクト立ち上げにつき、中途デザイナーの募集を開始しました</p>
+                  <p>
+                    【大阪事業所】新規プロジェクト立ち上げにつき、中途デザイナーの募集を開始しました
+                  </p>
                 </div>
               </div>
             </article>
@@ -144,7 +180,15 @@
 </template>
 
 <script>
-export default {};
+import { Hooper, Slide, Navigation as HooperNavigation } from "hooper";
+import "hooper/dist/hooper.css";
+export default {
+  components: {
+    Hooper,
+    Slide,
+    HooperNavigation
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -172,18 +216,26 @@ export default {};
     background-image: url("/images/company.jpg");
   }
 }
-.slide-list {
+.slide-list,
+.hooper-top {
   display: none;
   @include pc {
     display: block;
-    height: 510px;
-    width: 1037px;
-    margin: auto;
   }
 }
 .slide-list img {
   height: 100%;
   border-radius: 30px;
+}
+.hooper-top_hooper {
+  height: 510px;
+  width: 1037px;
+  margin: auto;
+}
+.hooper-top_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 //productsエリア
 .products {
